@@ -1,0 +1,38 @@
+GET http://localhost:3000/
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username":"HemanthRaju1",
+    "name":"Hemanth",
+    "password":"12345",
+    "gender":"Male",
+    "location":"Hyderabad"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"HemanthRaju1",
+    "password":"12345"
+}
+###
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username":"HemanthRaju1",
+    "oldPassword":"12345",
+    "newPassword":"1234"
+}
+###
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhlbWFudGhSYWp1MSIsImlhdCI6MTczMTMxOTYwMH0.Ui2ZTyK3lYOsjikyPdS0K0Fu_KGjYm99TTgEKtfXzEI
+
+###
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkhlbWFudGhSYWp1MSIsImlhdCI6MTczMTMxOTYwMH0.Ui2ZTyK3lYOsjikyPdS0K0Fu_KGjYm99TTgEKtfXzEI
+
